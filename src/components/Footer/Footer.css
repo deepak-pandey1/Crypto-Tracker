@@ -1,0 +1,84 @@
+/* Footer.css */
+
+.footer {
+    background: rgba(0, 0, 0, 0); /* Dark background */
+    box-shadow: rgba(0, 0, 0, 0) 0px 8px 15px; /* Subtle shadow */
+    padding: 2rem 10%; /* Adjust padding */
+    height: 7vh;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between; /* Spread out content */
+    align-items: center; /* Vertically center the items */
+}
+
+.copyright {
+    font-size: 1rem;
+    /* margin-bottom: -0.5rem;  */
+    /* padding: 2rem 0; */
+    color: #ffffff; /* White color */
+    display: flex;
+    flex-direction: column; /* Stack <p> tags vertically */
+    justify-content: flex-end; /* Push content to the bottom */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove padding */
+}
+
+
+.copyright p {
+    margin: 0; /* Remove margin between <p> tags */
+    padding: 0; /* Remove padding to eliminate any space */
+}
+
+/* .redes-sociales {
+    padding: 2rem 0;
+} */
+
+.redes-sociales a {
+    font-size: 2rem;
+    padding-left: 2.5rem; /* Space between icons */
+    color: #ffffff; /* Set text color to white */
+    transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
+    position: relative; /* Enable for better animation control */
+}
+
+.redes-sociales a:hover {
+    color: #eebc1d; /* Green color on hover */
+    transform: scale(1.1) rotate(15deg); /* Slightly larger and rotated effect */
+    opacity: 0.9; /* Slight opacity reduction */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow to give depth */
+}
+
+.redes-sociales a::before {
+    content: ''; /* Add additional effect using ::before */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #40ee1d; /* Green color for the line */
+    transition: width 0.4s ease, left 0.4s ease; /* Smooth width animation */
+    transform: translate(-50%, -50%);
+}
+
+.redes-sociales a:hover::before {
+    width: 40%;
+    left: 35%;
+}
+
+@media (max-width: 570px) {
+    .footer {
+        padding: 0.4rem 5%;
+    }
+
+    .site-footer .copyright p {
+        font-size: 1.2rem;
+    }
+
+    .site-footer .redes-sociales a {
+        font-size: 2.5rem;
+        padding-left: 2rem; /* Less padding on smaller screens */
+        color: #ffffff; /* Set text color to white */
+    }
+}
