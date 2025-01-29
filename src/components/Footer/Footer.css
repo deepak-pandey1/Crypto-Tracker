@@ -4,61 +4,59 @@
     background: rgba(0, 0, 0, 0); /* Dark background */
     box-shadow: rgba(0, 0, 0, 0) 0px 8px 15px; /* Subtle shadow */
     padding: 2rem 10%; /* Adjust padding */
-    height: 7vh;
+    height: auto; /* Allow height to adjust dynamically */
 }
 
 .site-footer {
     display: flex;
     justify-content: space-between; /* Spread out content */
     align-items: center; /* Vertically center the items */
+    flex-wrap: wrap; /* Allows elements to wrap if needed */
 }
 
+/* Ensure proper alignment and spacing */
 .copyright {
     font-size: 1rem;
-    /* margin-bottom: -0.5rem;  */
-    /* padding: 2rem 0; */
     color: #ffffff; /* White color */
     display: flex;
     flex-direction: column; /* Stack <p> tags vertically */
     justify-content: flex-end; /* Push content to the bottom */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove padding */
+    text-align: center; /* Center text on smaller screens */
 }
 
-
+/* Remove margins between <p> tags */
 .copyright p {
-    margin: 0; /* Remove margin between <p> tags */
-    padding: 0; /* Remove padding to eliminate any space */
+    margin: 0;
+    padding: 0;
 }
 
-/* .redes-sociales {
-    padding: 2rem 0;
-} */
-
+/* Social Media Icons */
 .redes-sociales a {
     font-size: 2rem;
     padding-left: 2.5rem; /* Space between icons */
-    color: #ffffff; /* Set text color to white */
-    transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
-    position: relative; /* Enable for better animation control */
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+    position: relative;
 }
 
 .redes-sociales a:hover {
-    color: #eebc1d; /* Green color on hover */
-    transform: scale(1.1) rotate(15deg); /* Slightly larger and rotated effect */
-    opacity: 0.9; /* Slight opacity reduction */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow to give depth */
+    color: #eebc1d;
+    transform: scale(1.1) rotate(15deg);
+    opacity: 0.9;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .redes-sociales a::before {
-    content: ''; /* Add additional effect using ::before */
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     width: 0;
     height: 4px;
-    background-color: #40ee1d; /* Green color for the line */
-    transition: width 0.4s ease, left 0.4s ease; /* Smooth width animation */
+    background-color: #40ee1d;
+    transition: width 0.4s ease, left 0.4s ease;
     transform: translate(-50%, -50%);
 }
 
@@ -67,18 +65,45 @@
     left: 35%;
 }
 
-@media (max-width: 570px) {
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     .footer {
-        padding: 0.4rem 5%;
+        padding: 1rem 5%;
     }
 
-    .site-footer .copyright p {
-        font-size: 1.2rem;
+    .site-footer {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
     }
 
-    .site-footer .redes-sociales a {
-        font-size: 2.5rem;
-        padding-left: 2rem; /* Less padding on smaller screens */
-        color: #ffffff; /* Set text color to white */
+    .copyright {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .redes-sociales a {
+        font-size: 2rem;
+        padding: 0 1rem; /* Reduce padding for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 0.5rem 5%;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+
+    .redes-sociales a {
+        font-size: 1.8rem;
+        padding: 0 0.8rem; /* Further reduce padding */
     }
 }

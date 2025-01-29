@@ -86,10 +86,20 @@ function CoinsTable() {
                 </Typography>
 
                 <TextField
-                    label="Search For a Crypto Currency.."
+                    label="Search For a Crypto Currency..."
                     variant="outlined"
                     style={{ marginBottom: 20, width: "100%" }}
                     onChange={(e) => setSearch(e.target.value)}
+                    InputProps={{
+                        style: {
+                          color: "white", // Ensures text is visible
+                          backgroundColor: "#1e1e1e", // Dark background for contrast
+                          borderRadius: "5px",
+                        },
+                      }}
+                      InputLabelProps={{
+                        style: { color: "gray" }, // Makes label visible
+                      }}
                 />
 
                 <TableContainer>
