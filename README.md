@@ -1,5 +1,6 @@
 <h1>Cryptocurrency Tracker</h1>
-![image-upscaled (1)](https://github.com/user-attachments/assets/7901fb60-2242-4158-8a7f-a060a34ba063)
+![Cryptocurrency Tracker Screenshot](https://github.com/user-attachments/assets/7901fb60-2242-4158-8a7f-a060a34ba063.png)
+
 
 
 <p>
