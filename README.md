@@ -1,3 +1,7 @@
+
+![image-upscaled](https://github.com/user-attachments/assets/49960f67-2adf-4b23-8712-2ba501519cdd)
+
+
 # Cryptocurrency Tracker
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) <!-- Replace with your license -->
