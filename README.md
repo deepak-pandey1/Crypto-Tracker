@@ -1,4 +1,6 @@
 <h1>Cryptocurrency Tracker</h1>
+![image-upscaled (1)](https://github.com/user-attachments/assets/7901fb60-2242-4158-8a7f-a060a34ba063)
+
 
 <p>
   This project is a simple and user-friendly cryptocurrency tracker built with <strong>ReactJS</strong> and managed using <strong>Yarn</strong>. It provides live price updates for various cryptocurrencies like Bitcoin, Ethereum, and more, helping you stay on top of market trends.
