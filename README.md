@@ -1,3 +1,7 @@
+![image-upscaled (1)](https://github.com/user-attachments/assets/76e0a940-1e67-42fa-a51a-5ede31c849e0)
+
+
+
 <h1>Cryptocurrency Tracker</h1>
 
 <p>
