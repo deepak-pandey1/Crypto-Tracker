@@ -11,31 +11,33 @@
 
 ## Project Workflow Diagram
 ```mermaid
+graph TD
+    subgraph User_Visit
+        A[User opens https://cryptostracker.onrender.com/] --> B[Homepage loads with list of popular cryptocurrencies]
+        B --> C[User searches or selects a cryptocurrency]
+    end
 
-flowchart TD
-    A[User opens https://cryptostracker.onrender.com/] --> B[Homepage loads]
-    B --> C[List of popular cryptocurrencies with current prices & icons]
-    B --> D[Search bar to find specific cryptocurrency]
-    
-    C --> E[User selects a cryptocurrency]
-    D --> E
-    
-    E --> F[Fetch detailed data via API]
-    F --> G[Current price]
-    F --> H[Historical price data (up to 7 years)]
-    F --> I[Market cap, volume, % change]
-    F --> J[Price charts (line/candlestick)]
-    
-    J --> K[User interacts with charts]
-    K --> L[Explore different time ranges]
-    K --> M[Hover for exact price data points]
-    
-    L --> N[User can switch to another cryptocurrency anytime]
-    M --> N
-    N --> F
-    
-    N --> O[UI updates smoothly with animations & responsive design]
-    O --> P[User navigates or closes site]
+    subgraph Data_Fetching
+        C --> D[Fetch detailed crypto data via API]
+        D --> E[Current price]
+        D --> F[Historical price data (up to 7 years)]
+        D --> G[Market cap, volume, % change]
+        D --> H[Render price charts (line/candlestick)]
+    end
+
+    subgraph User_Interaction
+        H --> I[User interacts with charts]
+        I --> J[Explore different time ranges (1 day, 1 month, 1 year, 7 years)]
+        I --> K[Hover to see exact price data points]
+        J --> L[User switches to another cryptocurrency anytime]
+        K --> L
+        L --> D
+    end
+
+    subgraph UI
+        L --> M[UI updates smoothly with animations & responsive design]
+        M --> N[User navigates or closes the site]
+    end
 ```
 
 <h2>Features</h2>
