@@ -18,10 +18,10 @@ graph TD
     
     C -->|Searches or selects a crypto| D([Fetch detailed crypto data via API])
     
-    D --> E([Show current price])
-    D --> F([Show historical price data up to 7 years])
-    D --> G([Show market cap volume percent change])
-    D --> H([Render price charts line or candlestick])
+    D --> E([Show current price up to 1 year])
+    D --> F([Show market cap])
+    D --> G([Show 24 hrs price change percentage])
+    D --> H([Render price charts line only])
     
     H --> I([User interacts with charts])
     
@@ -38,11 +38,12 @@ graph TD
     N --> O([User navigates away or closes site])
     
     %% Styling nodes
-    classDef process fill:#f9f,stroke:#333,stroke-width:2px,color:#000,rounded
-    classDef decision fill:#bbf,stroke:#333,stroke-width:2px,color:#000,diamond
+    classDef process fill:#a2d2ff,stroke:#333,stroke-width:2px,color:#000,rounded
+    classDef decision fill:#ffafcc,stroke:#333,stroke-width:2px,color:#000,diamond
     
     class A,B,D,E,F,G,H,I,K,L,N,O process
     class C,J,M decision
+
 
 
 
