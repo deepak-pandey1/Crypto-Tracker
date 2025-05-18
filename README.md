@@ -18,14 +18,22 @@
   <li><strong>Magic UI Integration</strong>: Incorporates prebuilt components from Magic UI for a polished user experience.</li>
 </ul>
 
-<h2>Technologies Used</h2>
-<ul>
-  <li><strong>ReactJS</strong>: For building the dynamic user interface.</li>
-  <li><strong>Yarn</strong>: For efficient package management.</li>
-  <li><strong>Styled Components</strong>: For creating reusable and modular styles.</li>
-  <li><strong>Axios</strong>: For making API requests to retrieve live cryptocurrency data.</li>
-  <li><strong>Magic UI</strong>: For prebuilt UI components that enhance the application's design.</li>
-</ul>
+## 🧰 Tech Stack
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-%235A29E4.svg?style=for-the-badge&logo=axios&logoColor=white)
+![React Icons](https://img.shields.io/badge/React_Icons-%23000000.svg?style=for-the-badge&logo=react&logoColor=white)
+![React ChartJS](https://img.shields.io/badge/React_ChartJS-%23FF6384.svg?style=for-the-badge&logo=chart-dot-js&logoColor=white)
+![Magic UI](https://img.shields.io/badge/Magic_UI-%23000000.svg?style=for-the-badge&logo=magic&logoColor=white)
+
+</div>
 
 <h2>How to Use</h2>
 <ol>
