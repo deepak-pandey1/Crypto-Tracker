@@ -13,15 +13,15 @@
 ```mermaid
 graph TD
     %% Define nodes with shapes
-    A([User opens https://cryptostracker.onrender.com/]) --> B([Homepage loads with popular cryptocurrencies])
+    A([User opens https://cryptostracker.onrender.com/]) --> B([Homepage loads popular cryptocurrencies])
     B --> C{User action}
     
     C -->|Searches or selects a crypto| D([Fetch detailed crypto data via API])
     
     D --> E([Show current price])
     D --> F([Show historical price data up to 7 years])
-    D --> G([Show market cap, volume, % change])
-    D --> H([Render price charts (line/candlestick)])
+    D --> G([Show market cap volume percent change])
+    D --> H([Render price charts line or candlestick])
     
     H --> I([User interacts with charts])
     
@@ -33,7 +33,7 @@ graph TD
     L --> M
     
     M -->|Switch crypto| D
-    M -->|End interaction| N([UI updates smoothly with animations & responsive design])
+    M -->|End interaction| N([UI updates with animations and responsive design])
     
     N --> O([User navigates away or closes site])
     
@@ -43,6 +43,7 @@ graph TD
     
     class A,B,D,E,F,G,H,I,K,L,N,O process
     class C,J,M decision
+
 
 
 ```
