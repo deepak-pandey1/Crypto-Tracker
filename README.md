@@ -20,14 +20,14 @@ graph TD
     subgraph Data_Fetching
         C --> D[Fetch detailed crypto data via API]
         D --> E[Current price]
-        D --> F[Historical price data (up to 7 years)]
-        D --> G[Market cap, volume, % change]
-        D --> H[Render price charts (line/candlestick)]
+        D --> F[Historical price data up to 7 years]
+        D --> G[Market cap, volume, percent change]
+        D --> H[Render price charts line or candlestick]
     end
 
     subgraph User_Interaction
         H --> I[User interacts with charts]
-        I --> J[Explore different time ranges (1 day, 1 month, 1 year, 7 years)]
+        I --> J[Explore different time ranges: 1d, 1m, 1y, 7y]
         I --> K[Hover to see exact price data points]
         J --> L[User switches to another cryptocurrency anytime]
         K --> L
@@ -35,9 +35,10 @@ graph TD
     end
 
     subgraph UI
-        L --> M[UI updates smoothly with animations & responsive design]
+        L --> M[UI updates smoothly with animations and responsive design]
         M --> N[User navigates or closes the site]
     end
+
 ```
 
 <h2>Features</h2>
