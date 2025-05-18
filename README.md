@@ -9,6 +9,35 @@
   This project is a simple and user-friendly cryptocurrency tracker built with <strong>ReactJS</strong> and managed using <strong>Yarn</strong>. It provides live price updates for various cryptocurrencies like Bitcoin, Ethereum, and more, helping you stay on top of market trends.
 </p>
 
+## Project Workflow Diagram
+```mermaid
+
+flowchart TD
+    A[User opens https://cryptostracker.onrender.com/] --> B[Homepage loads]
+    B --> C[List of popular cryptocurrencies with current prices & icons]
+    B --> D[Search bar to find specific cryptocurrency]
+    
+    C --> E[User selects a cryptocurrency]
+    D --> E
+    
+    E --> F[Fetch detailed data via API]
+    F --> G[Current price]
+    F --> H[Historical price data (up to 7 years)]
+    F --> I[Market cap, volume, % change]
+    F --> J[Price charts (line/candlestick)]
+    
+    J --> K[User interacts with charts]
+    K --> L[Explore different time ranges]
+    K --> M[Hover for exact price data points]
+    
+    L --> N[User can switch to another cryptocurrency anytime]
+    M --> N
+    N --> F
+    
+    N --> O[UI updates smoothly with animations & responsive design]
+    O --> P[User navigates or closes site]
+```
+
 <h2>Features</h2>
 <ul>
   <li><strong>Live Price Updates</strong>: Displays real-time cryptocurrency prices fetched from reliable APIs.</li>
